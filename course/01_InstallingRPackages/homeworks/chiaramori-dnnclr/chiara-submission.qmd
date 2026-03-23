@@ -117,4 +117,22 @@ install.packages("Rtsne")
 # Website: https://cran.r-project.org/web/packages/uwot/index.html
 install.packages("uwot")
 
+## install broom package
+# location: CRAN
+# Website: https://cran.r-project.org/web/packages/broom/index.html
+install.packages("broom")
+
+
+## install cytoMEM package
+# location: Bioconductor
+# Website: https://bioconductor.org/packages/devel/bioc/html/cytoMEM.html
+BiocManager::install("cytoMEM")
+
+## install DillonHammill/CytoExploreR package
+# location: Github
+# Website: https://github.com/DillonHammill/CytoExploreR
+devtools::install_github("DillonHammill/openCyto", force = TRUE)
+devtools::install_github("DillonHammill/DataEditR")
+devtools::install_github("DillonHammill/HeatmapR")
+
 

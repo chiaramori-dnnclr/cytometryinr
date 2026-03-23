@@ -1,0 +1,120 @@
+## install purrr package
+# location: CRAN
+# Website: https://cran.r-project.org/web/packages/purrr/index.html
+install.packages("purrr")
+
+## install flowCore package
+# location: Bioconductor
+# Website: https://bioconductor.org/packages/release/bioc/html/flowCore.html
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+BiocManager::install("flowCore")    
+
+## install flowWorkspace package
+# location: Bioconductor
+# Website: https://bioconductor.org/packages/release/bioc/html/flowWorkspace.html
+BiocManager::install("flowWorkspace")    
+
+## install stringr package
+# location: CRAN
+# Website: https://cran.r-project.org/web/packages/stringr/index.html
+install.packages("stringr")
+
+
+## install ggplot2 package
+# location: CRAN
+# Website: https://cran.r-project.org/web/packages/ggplot2/index.html
+install.packages("ggplot2")
+
+
+## install ggcyto package
+# location: Bioconductor
+# Website: https://bioconductor.org/packages/release/bioc/html/ggcyto.html
+
+BiocManager::install("ggcyto")    
+
+## install tidyr package
+# location: CRAN
+# Website: https://cran.r-project.org/web/packages/tidyr/index.html
+install.packages("tidyr")
+
+
+## install openCyto package
+# location: Bioconductor
+# Website: https://bioconductor.org/packages/release/bioc/html/openCyto.html
+BiocManager::install("openCyto")    
+
+## install FlowSOM package
+# location: Bioconductor
+# Website: https://bioconductor.org/packages/release/bioc/html/FlowSOM.html
+BiocManager::install("FlowSOM")    
+
+## install xml2 package
+# location: CRAN
+# Website: https://cran.r-project.org/web/packages/xml2/index.html or https://xml2.r-lib.org/
+install.packages("xml2")
+
+
+## install saeyslab/CytoNorm package
+# location: GitHub
+# Website: https://github.com/saeyslab/CytoNorm
+
+devtools::install_github("saeyslab/CytoNorm")
+
+
+## install lubridate package
+# location: CRAN
+# Website: https://cran.r-project.org/web/packages/lubridate/index.html
+install.packages("lubridate")
+
+
+## install httr2 package
+# location: CRAN
+# Website: https://cran.r-project.org/web/packages/httr2/index.html
+install.packages("httr2")
+
+## install flowGate package
+# location: Bioconductor
+# Website: https://bioconductor.org/packages/release/bioc/html/flowGate.html
+BiocManager::install("flowGate")    
+
+
+## install devtools package
+# location: CRAN
+# Website: https://cran.r-project.org/web/packages/devtools/index.html
+install.packages("devtools")
+
+## install plotly package
+# location: CRAN
+# Website: https://cran.r-project.org/web/packages/plotly/index.html
+install.packages("plotly")
+
+
+## install biosurf/cyCombine package
+# location: GitHub
+# Website: https://github.com/biosurf/cyCombine
+# To ensure Rstudio looks up BioConductor packages run:
+setRepositories(ind = 1:2)
+# If you are correcting cytometry data, install the following Bioconductor packages:
+BiocManager::install(c("flowCore", "Biobase", "sva"))
+# Then install package with
+remotes::install_github("biosurf/cyCombine")
+
+
+## install CytoML package
+# location: Bioconductor
+# Website: https://bioconductor.org/packages/release/bioc/html/CytoML.html
+BiocManager::install("CytoML")    
+
+
+## install Rtsne package
+# location: CRAN
+# Website: https://cran.r-project.org/web/packages/Rtsne/index.html
+install.packages("Rtsne")
+
+## install uwot package
+# location: CRAN
+# Website: https://cran.r-project.org/web/packages/uwot/index.html
+install.packages("uwot")
+
+

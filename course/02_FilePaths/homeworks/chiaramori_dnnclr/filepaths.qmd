@@ -1,0 +1,96 @@
+```{r}
+WhatDayDidIWriteThis <- "Saturday"
+WhatDayDidIWriteThis
+SecretMeetingLocation <- "The Batcave"
+SecretMeetingLocation
+```
+```{r}
+{r}
+Fluorophores <- 29
+str(Fluorophores)
+class(Fluorophores)
+```
+```{r}
+IsPerCPCy5AGoodFluorophore <- FALSE
+str(IsPerCPCy5AGoodFluorophore)
+class(IsPerCPCy5AGoodFluorophore)
+```
+```{r}
+PackageToInstall <- "dplyr"
+
+install.packages(PackageToInstall)
+library(dplyr)
+```
+```{r}
+PackagesToInstall <- c("dplyr","ggplot2","tidyr")
+
+install.packages(PackagesToInstall)
+library(dplyr)
+library(ggplot2)
+library(tidyr)
+```
+```{r}
+Fluorophores <- c("BV421", "FITC", "PE", "APC")
+str(Fluorophores)
+class(Fluorophores)
+length(Fluorophores)
+Fluorophores[1]
+Fluorophores[2]
+Fluorophores[3]
+Fluorophores[4]
+```
+```{r}
+list.dirs(path=".", full.names=FALSE, recursive=FALSE)
+```
+```{r}
+list.files(path="target", full.names=FALSE, recursive=FALSE)
+```
+```{r}
+FolderLocation <- file.path("data")
+ScreenshotFolder <- file.path(FolderLocation, "target")
+ScreenshotFolder
+list.files(path=ScreenshotFolder, full.names=FALSE, recursive=FALSE)
+```
+```{r}
+list.files(path=ScreenshotFolder, pattern="ND050", full.names=FALSE, recursive=FALSE)
+```
+```{r}
+files <- list.files("data", pattern=".fcs", full.names=FALSE, recursive=FALSE)
+files
+```
+```{r}
+library(stringr)
+str_detect(files, "INF")
+files[str_detect(files, "INF")]
+```
+```{r}
+Infants <- files[str_detect(files, "INF")]
+```
+```{r}
+RowNumber <- 299
+2 + RowNumber > 300
+if (2 + RowNumber > 3){
+    print("Stop Iterating")
+}
+```
+```{r}
+FolderTarget3 <- file.path("data", "target3")
+dir.exists(FolderTarget3)
+```
+```{r}
+if (!dir.exists(FolderTarget3)){
+    dir.create(FolderTarget3)
+}
+```
+```{r}
+files_present <- list.files("data", full.names=TRUE, recursive=FALSE)
+files_present
+```
+```{r}
+Infants <- files_present[str_detect(files_present, "INF")]
+file.copy(from=Infants, to=FolderTarget3)
+```
+```{r}
+all_files_present <- list.files(full.names=TRUE, recursive=TRUE)
+all_files_present 
+```

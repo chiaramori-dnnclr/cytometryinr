@@ -87,7 +87,7 @@ Having copied over the new data to your working project folder (Week 3 or whatev
 
 # Please note, this code-chunk is only for use when writing the code. Please switch eval to false and next code blocks eval to true before rendering
 
-PathToDataFolder <- file.path(getwd(), "course", "03_InsideFCSFile", "data")
+PathToDataFolder <- file.path(getwd(), "course", "03_InsideFCSFile","homeworks", "chiaramori_dnnclr", "data")
 ```
 
 ```{r}

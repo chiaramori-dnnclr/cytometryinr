@@ -1,0 +1,15 @@
+```{r}
+PathToDataFolder <- file.path(getwd(), "course", "03_InsideFCSFile","homeworks", "chiaramori_dnnclr", "data")
+```
+```{r} 
+fcs_files <- list.files(PathToDataFolder, pattern=".fcs", full.names=TRUE)
+fcs_files
+```
+```{r}
+library(dplyr) # CRAN
+library(stringr) # CRAN
+library(ggplot2) # CRAN
+library(plotly) # Using the :: to access
+library(flowCore) # Bioconductor
+```
+```{r}
